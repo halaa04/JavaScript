@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>task2</title>
+  </head>
+  <body>
+    <h1>Mark</h1>
+    <div id="output"></div>
+
+    <script>
+      let mark = prompt("Enter the mark ");
+      let grade;
+
+      if (mark < 50) {
+        grade = "fail";
+      } else if (mark >= 50 && mark <= 59) {
+        grade = "D";
+      } else if (mark >= 60 && mark <= 69) {
+        grade = "C";
+      } else if (mark >= 70 && mark <= 79) {
+        grade = "B";
+      } else if (mark >= 80 && mark <= 89) {
+        grade = "A";
+      } else if (mark >= 90 && mark <= 100) {
+        grade = "A+";
+      }
+      document.write("Mark = " + mark + " Grade = " + grade);
+    </script>
+  </body>
+</html>

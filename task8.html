@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>task8</title>
+  </head>
+  <body>
+    <h1>age</h1>
+    <div id="output"></div>
+    <script>
+      let x = Number(prompt("Enter your age : "));
+      if (x < 13) {
+        age = "Child";
+      } else if (x >= 13 && x <= 19) {
+        age = "Teenager";
+      } else if (x >= 20 && x <= 59) {
+        age = "Adult";
+      } else if (x > 60) {
+        age = "Senior";
+      }
+
+      console.log(" You are an " + age);
+      document.write(" You are an " + age);
+      alert(" You are an " + age);
+    </script>
+  </body>
+</html>
