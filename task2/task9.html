@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>9</h1>
+    <pre id="output"></pre>
+    <script>
+       let num = Number(prompt("How many numbers to show?"));
+
+    let a = 0;
+    let b = 1;
+    let result = "";
+
+    for (let i = 1; i <= num; i++) {
+      result += a + " ";
+
+      let next = a + b;
+      a = b;
+      b = next;
+    }
+
+    document.getElementById("output").textContent = result ;
+   </script>
+  </body>
+</html>
