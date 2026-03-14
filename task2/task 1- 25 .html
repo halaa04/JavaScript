@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+
+        /* 1
+
+        for (let i = 1; i <= 10; i++) {
+          let full = console.log(i + "-");
+        }
+        alert(full); */
+
+        //////////////////////////////////
+
+        /*  2
+
+       let count = 0;
+        for (let i=0 ; i <=30; i++)
+      {
+        count = count + (i);
+        console.log(count );
+      }
+      alert (count) */
+
+        ///////////////////////////////////
+
+        /*   3
+
+      let even;
+      for (let i = 1; i<= 50 ; i++ )
+      {
+        if (i%2==0)
+        even += i + " ";
+      }
+      alert(even); */
+
+        //////////////////////////////////
+
+        /*  4
+
+      let total = i;
+      for (let i=10; i > 1; i--)
+      {
+
+         total += console.log(i + " ");
+      }
+      alert(total); */
+
+        /////////////////////////////////
+
+        /*   5
+
+          let result = "";
+      let letters = ["A", "B", "C", "D", "E"];
+
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+          if (j < 4 - i) {
+            result += "A ";
+          } else {
+            result += letters[i] + " ";
+          }
+        }
+
+        result += "\n";
+      }
+
+      document.getElementById("output").textContent = result;
+        */
+
+        /////////////////////////////////
+
+        /*   6
+
+        let output = "";
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5 - i; j++) {
+          output += "1 ";
+        }
+
+        for (let k = 1; k <= i; k++) {
+          output += i + " ";
+        }
+
+        output += "\n";
+      }
+
+      console.log(output);
+      document.getElementById("output").textContent = output;
+
+        */
+        /////////////////////////////////
+
+        /*    7
+
+        let output = "";
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+          if (j === i) {
+            output += i + " ";
+          } else {
+            output += "0 ";
+          }
+        }
+        output += "\n";
+      }
+
+      document.getElementById("output").textContent = output;
+        */
+
+        /////////////////////////////////
+
+        /*   8
+          let factorial=1;
+      let num = Number(prompt("Enter a number : "));
+      for (let i = 1; i <= num; i++) 
+      {
+        factorial = factorial * i;
+      }
+      alert(factorial);
+        */
+
+        ////////////////////////////////
+
+        /*    9
+
+          let num = Number(prompt("How many numbers to show?"));
+
+    let a = 0;
+    let b = 1;
+    let result = "";
+
+    for (let i = 1; i <= num; i++) {
+      result += a + " ";
+
+      let next = a + b;
+      a = b;
+      b = next;
+    } */
+
+        ///////////////////////////////
+
+        /*      10
+
+        let str = prompt("Enter something : ")
+        let count =0;
+        for (let i =0; i < str.length; i++)
+        {
+          if (str.charAt(i) == 'c')
+          count ++;
+        }
+        alert (count); */
+
+        ////////////////////////////////
+
+        /*        11
+
+        let result = " ";
+        for (let j=1; j<=5; j++)
+        {
+          for (let i=1; i<=5; i++)
+          {
+            multi = j * i;
+            result = result + j + " * " + i + " = " + multi + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+          }
+           result = result + "<br>" ;
+        }
+        console.log(result);
+        document.getElementById("output").innerHTML = result; */
+
+        ////////////////////////////////
+
+        /*     12
+
+        let result = "";
+        let counter = 1;
+
+        let num = Number(prompt ("Enter a number : "));
+        for (let i=1; i <= num; i++)
+        {
+          for (let j=1; j<= i; j++)
+          {
+             result = result + counter + "&nbsp;";
+             counter++;
+          }
+            result = result + "<br>";
+        }
+        document.getElementById("output").innerHTML = result; */
+
+        //////////////////////////////////
+
+        /*         13
+
+        let result = "";
+        for (let i= 1; i<=100; i++)
+      {
+        if (i%7 ===0) {
+        result = result + i + " ";
+        }
+      }
+        document.getElementById("output").innerHTML = result; */
+
+        //////////////////////////////////
+
+        /*     14
+
+        let count =0;
+        for (let i=1; i<=100; i++)
+      {
+        if ( i % 2 !==0)
+        {
+          count = count + i;
+        }
+      }
+      document.getElementById("output").innerHTML = count; */
+
+      //////////////////////////////////
+
+      /*       15
+
+      let count =" ";
+      for (let i=1; i<=10; i++)
+      {
+        count += (i *i ) + " ";
+      }
+      document.getElementById("output").innerHTML = count; */
+
+      //////////////////////////////////
+
+      /*    16
+
+      let output= "";
+
+      for (let i=1; i<=30; i++)
+        {
+          if (i % 3 ===0 )
+        {
+        output +="Fizz ";
+        }
+       else if (i % 5 === 0)
+        {
+         output += "Buzz ";
+        }
+       else if (i % 3 === 0 && i % 5 === 0)
+         {
+       output += "FizzBuzz  ";
+         }
+        else {
+          output += i + "  ";
+        }
+      }
+      document.getElementById("output").innerHTML = output; */
+
+      ////////////////////////////////
+
+      /*    17
+
+      let num = Number(prompt ("Enter a Number : "))
+      let star = "";
+      for (let i=1; i <= num; i++ )
+        {
+          for (let j= 1; j<=i; j++)
+           { star = star + "*"  }
+           star = star + "<br>";
+        }
+        document.getElementById("output").innerHTML = star; */
+
+      ///////////////////////////////
+
+      /*     18 
+
+       let num = Number(prompt ("Enter a Number : "))
+      let star = "";
+      for (let i=num ; i >= 0; i-- )
+        {
+          for (let j= 1; j<=i; j++)
+           { star = star + "*"  }
+           star = star + "<br>";
+        }
+        document.getElementById("output").innerHTML = star; */
+
+      ///////////////////////////////
+
+      /*     19 
+
+      let full="";
+      let num = Number(prompt("Enter a numbe : "))
+      for (let i =1; i<=num; i++)
+    {
+      for (let j= 1; j<=i; j++)
+        { full = full + i; }
+
+      full = full + "<br>";
+    }
+    document.getElementById("output").innerHTML = full; */
+
+    //////////////////////////////////
+
+    /*    20
+
+    let full="";
+      let num = Number(prompt("Enter a numbe : "))
+      for (let i =1; i<=num; i++)
+    {
+      for (let j= 1; j<=i; j++)
+        { full = full + j; }
+
+      full = full + "<br>";
+    }
+    document.getElementById("output").innerHTML = full; */
+
+    //////////////////////////////////
+
+    /*    21
+    for (let i=1; i<=200; i++)
+    {
+      let s = String(i)
+      let sum =0;
+
+      for (let j=0; j<s.length; j++)
+    {
+      sum = sum + Number(s[j]);
+    }
+     if (sum ===5 )
+     document.getElementById("output").innerHTML += i + "<br>";
+    } */
+
+    //////////////////////////////////
+
+    /*      22
+     for (let i=1; i<=100; i++)
+    {
+      let s = String(i)
+      let sum =0;
+
+     if (s[0] > s[s.length-1] )
+     document.getElementById("output").innerHTML += i + "<br>";
+
+    } */
+
+    ////////////////////////////////
+
+    /*    23
+    for (let i=1; i<=100; i++)
+    {
+      let s = String(i)
+
+     if ( s.length > 1 && s[0] === s[s.length-1] )
+     document.getElementById("output").innerHTML += i + "<br>";
+
+    } */
+
+    //////////////////////////////////////
+
+    /*      24
+
+    for (let i=1; i<=300; i++)
+    {
+      let s = String(i);
+      let sum =1;
+
+      for (let j=0; j<s.length; j++)
+    {
+      sum = sum * Number(s[j]);
+    }
+    if (i % sum == 0)
+    document.getElementById("output").innerHTML += i + "<br>";
+    } */
+
+    /////////////////////////////////////
+
+      25
+
+    for (let i=1; i<=100; i++)
+    {
+      let s = String(i);
+      let sum = 0;
+      let pro = 1;
+
+      for (let j=0; j<s.length; j++)
+    {
+      sum = sum + Number(s[j]);
+      pro = pro * Number(s[j]);
+    }
+    if ( s.length > 1 && sum == pro )
+    document.getElementById("output").innerHTML += i + "<br>";
+    }   
+
+    </script>
+  </body>
+</html>
