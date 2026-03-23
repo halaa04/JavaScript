@@ -251,10 +251,10 @@ let str = "image.png ";
 document.writeln(str.repeat(3));
 */
 /////////////////////////////
-
+/*
 let str = "hello world ";
 document.writeln(str.indexOf('o'));
-
+*/
 
 
 
