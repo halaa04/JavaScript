@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        justify-content: space-around;
+        width: 90%;
+        height: auto;
+
+        padding-top: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+
+        height: auto;
+        margin-top: 10px;
+        padding: 30px 0px 30px 0px;
+      }
+      .div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+      }
+      .input {
+        width: 300px;
+      }
+      .submit {
+        width: 20%;
+        background-color: #3a8fd8;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .date {
+        width: 90%;
+        margin-left: 30%;
+        padding: 10px 25px 10px;
+        margin-top: 40px;
+        text-align: left;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+      }
+      .row label {
+        width: 90px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form-div">
+        <h1>Basic Info Form</h1>
+        <div class="row">
+          <label>First Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="first"
+            placeholder="Enter your first name"
+          />
+        </div>
+
+        <div class="row">
+          <label>Last Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="last"
+            placeholder="Enter your last name"
+          />
+        </div>
+
+        <div class="row">
+          <label>Email:</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <br />
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+      <hr />
+
+      <div class="data">
+        <h3>Submitted Data:</h3>
+        <p>First Name:</p>
+        <p>Last Name:</p>
+        <p>Email:</p>
+      </div>
+    </div>
+    <script src="form2.js"></script>
+  </body>
+</html>
