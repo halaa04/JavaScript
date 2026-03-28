@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GitHub Users</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+    <header>
+        <div class="logo-area">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" class="github-icon">
+            <h1>GitHub Users <span class="blue-text">Viewer</span></h1>
+        </div>
+        <p class="subtitle">Fetch data from the GitHub API and display users dynamically</p>
+        <hr/> 
+        <p><span>check_circle</span> Fetch users from: <a href="https://api.github.com/users">https://api.github.com/users</a></p>
+    </header>
+    
+            
+
+    <div class="action-area">
+        <button id="btnFetch">Fetch Users Data</button>
+        <p class="status-text">Users will appear here</p>
+        <hr> 
+    </div>
+
+    <div id="container"></div>
+</div>
+    <script src="user.js"></script>
+  </body>
+</html>
