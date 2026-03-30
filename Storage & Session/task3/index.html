@@ -1,20 +1,117 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storage</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        
+      }
+
+      #searchPart {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .bar {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 5px 15px;
+        background: #fafafa;
+      }
+
+      #search {
+        border: none;
+        background: transparent;
+        outline: none;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      button {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .clear {
+        background-color: blue;
+        color: white;
+        padding: 0 15px;
+      }
+
+      #results {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      #view {
+        width: 100%;
+        max-width: 400px;
+      }
+
+
+      .newView {
+        background: white;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .newView div {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .Btn {
+        background-color: #ff4d4d;
+        color: white;
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <div>
-        <form>
-      <input type="text" placeholder=" Enter your name : " id="name"/>
-      <br/>
-      <br/>
-      <input type="email" placeholder="Enter your Email : " id="email"/>
-      <br/>
-      <br/>
-      <button value="save" id="save">save name</button>
-    </form>
+    <div id="searchPart">
+      <div class="bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search" />
+      </div>
+      <button id="clear" class="clear">clear</button>
     </div>
+    <br />
+
+    <p id="results">Results</p>
+    <br />
+    <div id="view"></div>
+
     <script src="search.js"></script>
   </body>
 </html>
